@@ -15,7 +15,6 @@
   <preference name="exit-on-suspend" value="false"/>
   <preference name="show-splash-screen-spinner" value="true"/>
   <preference name="auto-hide-splash-screen" value="true"/>
-  <preference name="SplashScreenDelay" value="10000"/>
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
@@ -70,7 +69,6 @@
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/>
-  <allow-navigation href="http://*/*" />
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
