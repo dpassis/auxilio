@@ -23,6 +23,7 @@ var app = {
     initialize: function() {
        
         this.bindEvents();
+        navigator.splashscreen.hide();
 		
 		new MyPreferencesView().run();
 
