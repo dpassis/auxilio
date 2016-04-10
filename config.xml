@@ -38,7 +38,7 @@
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
   <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.0.8" />
-  <gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm">
+  <gap:plugin name="cordova-plugin-whitelist" version="1.0.0" source="npm"/>
   <icon src="icon.png"/>
   <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="www/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
