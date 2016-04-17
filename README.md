@@ -1,2 +1,0 @@
-# auxilio
-auxilio read.me
