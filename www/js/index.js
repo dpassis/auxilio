@@ -23,9 +23,7 @@ var app = {
     initialize: function() {
        
         this.bindEvents();
-       
-		
-		new MyPreferencesView().run();
+		new AuxilioView().run();
 
     },
 	
@@ -49,7 +47,7 @@ var app = {
 
     /** Call to Render Text Page **/
     textView: function(itemId) {
-        //this.toggleSideBar();
+
         new TextView(itemId).run();
     },
 	
@@ -68,8 +66,6 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        //app.receivedEvent('menubutton');
-         
     },
 
     //Exibe um alert (Nativo de acordo com o SO)
@@ -138,6 +134,7 @@ var app = {
                                                  );
     },
 
+    /**Show or Hide Div by id **/
     showHideDiv : function(id){
 
         var idReplace =  id.replace(/ /g, "_");

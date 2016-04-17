@@ -20,15 +20,12 @@ var language_root = language_default;
 var HomeView = function(){
 
     this.header  = "<div/>";
-    //this.listHelp = "<div/>";
 	this.content = "<div/>";
 
 	this.initialize = function(){
 		
 		this.content 	= Handlebars.compile($("#content-tpl").html());
 		this.header  	= Handlebars.compile($("#header-tpl").html());
-		//this.listHelp 	= Handlebars.compile($("#listHelp-tpl").html());
-
 	
 	};
 
@@ -40,13 +37,11 @@ var HomeView = function(){
 
    			var contextHeader  = {title: header[language_root].home.desc, img: header[language_root].home.img };
    			var contextContent = {body:"<div>"+
-							                "<h1>"+startPage[language_root].appName.content+"</h1>"+
+							                "<h1>"+startPage[language_root].appName_1.content+"</h1>"+
 							            "</div>",items: items};
 
    			 $('#header').html(this.header(contextHeader));
    			 $('#content').html(this.content(contextContent));
-   			 //$('#listHelp').html(this.listHelp(context));
-   			 //$(document.body).append(this.listHelp(context));
 	};
 	
 	this.run = function(){
@@ -80,10 +75,9 @@ var AboutView = function(){
 	
    			var contextHeader  = {title: header[language_root].about.desc, img: header[language_root].about.img };
    			var contextContent = {body:"<div class='app' id='pagehome'>"+
-							                "<h1>About</h1>"+
-							                "<div id='deviceready' class='blink'>"+
-							                    "<p class='event listening'>Conectando...</p>"+
-							                    "<p class='event received'>All about you</p>"+
+							                "<h1>"+header[language_root].about.desc+"</h1>"+
+							                "<div>"+
+							                    "<p>"+about[language_root].content+"</p>"+
 							               "</div>"+
 							            "</div>"};
 
@@ -123,10 +117,9 @@ var HelpView = function(){
 
    			var contextHeader  = {title: header[language_root].help.desc, img: header[language_root].help.img };
    			var contextContent = {body:"<div class='app' id='pagehome'>"+
-							                "<h1>Help</h1>"+
-							                "<div id='deviceready' class='blink'>"+
-							                    "<p class='event listening'>Conectando...</p>"+
-							                    "<p class='event received'>All about you</p>"+
+							               "<h1>"+header[language_root].about.desc+"</h1>"+
+							                "<div>"+
+							                    "<p>"+help[language_root].content+"</p>"+
 							               "</div>"+
 							            "</div>"};
 
@@ -160,8 +153,6 @@ var TextView = function(itemId){
 		
 		this.content 	= Handlebars.compile($("#content-tpl").html());
 		this.header  	= Handlebars.compile($("#header-tpl").html());
-		//this.listHelp 	= Handlebars.compile($("#listHelp-tpl").html());
-
 	
 	};
 
@@ -172,17 +163,18 @@ var TextView = function(itemId){
 
 		  	
 
-   			var contextHeader  = {title: header[language_root].home.desc, img: header[language_root].home.img };
+   			var contextHeader  = {title: '', img: '' };
    			var contextContent = {body:"<div style ='text-align:center'>"+
 							                "<h1>"+texto[itemId].item+"</h1>"+
 							                "<h2>"+texto[itemId].vers+"</h2>"+
 							                "<p style ='text-align:left'>"+texto[itemId].itemText+"</p>"+
-							            "</div>"};
+							                "<a href='#' onclick='window.plugins.socialsharing.share("+texto[itemId].itemText+")'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
+							            "</div>"
+							        	}
 
    			 $('#header').html(this.header(contextHeader));
    			 $('#content').html(this.content(contextContent));
-   			 //$('#listHelp').html(this.listHelp(context));
-   			 //$(document.body).append(this.listHelp(context));
+
 	};
 	
 	this.run = function(){
@@ -196,7 +188,7 @@ var TextView = function(itemId){
 };
 
 
-var MyPreferencesView = function(){
+var AuxilioView = function(){
 
 	this.header = "<div/>";
 	this.sideBar = "<div/>";

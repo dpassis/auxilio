@@ -37,6 +37,7 @@ var startPage = {
 	
 "pt" : {
 		appName:    { content: "Onde Encontrar Auxílio"},
+		appName_1:  { content: "Onde Encontrar Auxílio quando"},
 		startApp:   { content: "Clique para encontrar auxílio"},
 		starting:   { content: "Iniciando..."}
 					
@@ -44,6 +45,7 @@ var startPage = {
 
 "en" : {
 		appName:    { content: "Where to Find Help"},
+		appName_1:  { content: "Where to Find Help When"},
 		startApp:   { content: "Click to find help"},
 		starting:   { content: "Starting..."}
 			
@@ -51,35 +53,53 @@ var startPage = {
 
 };
 
-var login = {
-	
-"pt" : {
-		placeHolderUser: 		{ content: "Digite seu Usuário" },		
-		placeHolderPassword:  	{ content: "Digite sua Senha"  },		
-	    h1Login:  				{ content: "Início"  },
-		btnLogin:  				{ content: "Entrar"  }
-		},
-
-"en" : {
-		placeHolderUser: 		{ content: "Enter your User" },		
-		placeHolderPassword:  	{ content: "Enter your Password"  },		
-	    h1Login:  				{ content: "Start"  },
-		btnLogin:  				{ content: "Login"  }		
-		}
-};
-
-
-
 
 var about = {
+
+	"pt" : {
+			content: "Um aplicativo para encontrar referências bíblicas em diferentes situaçções"
+		
+			},
+
+	"en" : {
+			content: "An application to find bible references in diferentes life situations."
+				
+			}
 	
 	
 };
 
 var help = {
+
+	"pt" : {
+			content: "Um aplicativo para encontrar referências bíblicas em diferentes situaçções"
+		
+			},
+
+	"en" : {
+			content: "An application to find bible references in diferentes life situations."
+				
+			}
 	
 	
 };
+
+
+var util = {
+
+	"pt" : {
+			share: { content: "Compartilhar"}
+		
+						
+			},
+
+	"en" : {
+			share: { content: "Share"}
+
+				
+			}
+
+}
 
 
 var helpList = {
@@ -174,7 +194,7 @@ var helpList = {
 						{val:"Heb. 4:16", itemId: "val_48"}
 					],
 				class:"emogiFacingCrisis",		click:'app.helpView()'},
-				/**refazer daki pra frente **/
+			
 		{item: "Falta a Fé",
 				vers:[  {val:"Salmo 42:5", itemId: "val_49"},
 						{val:"Heb. 11", itemId: "val_50"}
