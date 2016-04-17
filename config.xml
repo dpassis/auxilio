@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="br.com.auxilio" version="1.0.0">
-  <name>Onde encontrar auxílio</name>
+  <name>auxilium</name>
   <description>Um aplicativo com referências bíblicas para diversas situações da vida.</description>
   <author href="http://dpassis.com.br" email="daniel@dpassis.com.br">Daniel Paulo de Assis</author>
   <content src="index.html"/>
