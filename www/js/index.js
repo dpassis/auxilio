@@ -115,8 +115,13 @@ var app = {
 		
 	},
 
+    socialShare: function(){
+
+
+    },
+
     fbShare : function(){
-        alert('Share Facebook');
+       
     window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
                                                  null /* img */, 
                                                  null /* url */, 
