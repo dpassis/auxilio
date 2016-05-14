@@ -324,7 +324,7 @@ var helpList = {
 						{val:"John 17", itemId: "val_23"},
 						{val:"I John 5:14 - 15", itemId: "val_24"}
 					],
-				class:"emogi",		click:'app.helpView()'},
+				class:"emogiContrite",		click:'app.helpView()'},
 		{item: "Depressed",
 				vers:[  {val:"PSalm 34", itemId: "val_25"},
 						{val:"PSalm 91", itemId: "val_26"},
