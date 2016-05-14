@@ -24,6 +24,8 @@ var app = {
        
         this.bindEvents();
 		new AuxilioView().run();
+        //initialize sidebar style left to run or first click
+        document.getElementById("sidebar").style.left = "-200px";
 
     },
 	
@@ -93,8 +95,8 @@ var app = {
     toggleSideBar: function(){
 		
             var sidebar = document.getElementById("sidebar");
-            
-            
+
+
             if(sidebar.style.left == "-200px")
             {
                 sidebar.style.left = "0px";
@@ -145,7 +147,6 @@ var app = {
         var idReplace =  id.replace(/ /g, "_");
 
         
-
         if(document.getElementById(idReplace).style.display == 'none'){
 
            

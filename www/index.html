@@ -37,20 +37,14 @@
 		    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script src="lib/handlebars-v3.0.3.js"></script>
         <script type="text/javascript"  src="lib/handlebars.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/global.js"></script>
+        <script type="text/javascript" src="js/view.js"></script>
         <script type="text/javascript" charset="utf-8">
 
 
             function onLoad() {
                 document.addEventListener("deviceready", onDeviceReady, false);
-            }
-
-           
-            function onDeviceReady() {
-                document.addEventListener('menubutton', onMenuKeyDown, false);
-            }
-
-            function onMenuKeyDown() {
-                app.toggleSideBar();
             }
 
         </script>
@@ -91,7 +85,6 @@
                           {{/each}}
                         </ul>
                     </div>
-              <button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
 				</script>
 
 				<script id="sidebar-tpl" type="x-handlebars-template">
@@ -104,13 +97,9 @@
                         </ul>
 					   </div>
 					</div>
-                </script> 
+        </script> 
 
         <script type="text/javascript" src="cordova.js"></script>
-        
-        <script type="text/javascript" src="js/global.js"></script>
-        <script type="text/javascript" src="js/view.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             app.initialize();
