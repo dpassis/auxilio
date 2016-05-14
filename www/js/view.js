@@ -14,7 +14,7 @@ var language_root = language_default;
                 
 /**
 *
-* Render the Home Page
+* Render page with the help List
 *
 **/
 var HomeView = function(){
@@ -117,9 +117,9 @@ var HelpView = function(){
 
    			var contextHeader  = {title: header[language_root].help.desc, img: header[language_root].help.img };
    			var contextContent = {body:"<div class='app' id='pagehome'>"+
-							               "<h1>"+header[language_root].about.desc+"</h1>"+
+							               "<h1>"+header[language_root].help.desc+"</h1>"+
 							                "<div>"+
-							                    "<p>"+help[language_root].content+"</p>"+
+							                    "<p style ='text-align:justify;'>"+help[language_root].content+"</p>"+
 							               "</div>"+
 							            "</div>"};
 
@@ -142,7 +142,7 @@ var HelpView = function(){
 * Render the Help Page
 *
 **/
-var TextView = function(itemId){
+var TextView = function(itemId, classId){
 	
 
 	 this.header  = "<div/>";
@@ -165,10 +165,11 @@ var TextView = function(itemId){
 
    			var contextHeader  = {title: '', img: '' };
    			var contextContent = {body:"<div style ='text-align:center'>"+
-							                "<h1>"+texto[itemId].item+"</h1>"+
+   											"<br/>"+
+							                "<h1><span class='"+texto[itemId].class+"'></span>"+texto[itemId].item+"</h1>"+
 							                "<h2>"+texto[itemId].vers+"</h2>"+
-							                "<p style ='text-align:left'>"+texto[itemId].itemText+"</p>"+
-							                "<a href='#' onclick='window.plugins.socialsharing.share("+texto[itemId].vers+")'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
+							                "<p style ='text-align:justify; padding-left: 20px; padding-right: 20px;'>"+texto[itemId].itemText+"</p>"+
+							                "<a href='#' onclick='window.plugins.socialsharing.share('Mensagem compartilhada')'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
 							            "</div>"
 							        	}
 
