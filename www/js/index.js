@@ -28,6 +28,10 @@ var app = {
         document.getElementById("sidebar").style.left = "-200px";
 
     },
+
+    exit: function(){
+        navigator.app.exitApp();
+    },
 	
 	/** Call to Render Home Page **/
 	homeView: function() {
@@ -73,7 +77,7 @@ var app = {
 
     onBackKeyDown: function() {
         alert('onBackKeyDown');
-        app.helpView();
+        app.HomeView();
     },
 
     //Exibe um alert (Nativo de acordo com o SO)

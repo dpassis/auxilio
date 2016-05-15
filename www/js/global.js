@@ -21,13 +21,15 @@ var menu = {
 "pt" : [
 		{item: "Início", 		class:"home", 		click:'app.homeView()'},
 		{item: "Sobre",			class:"about",		click:'app.aboutView()'},
-		{item: "Ajuda",			class:"help",		click:'app.helpView()'}
+		{item: "Ajuda",			class:"help",		click:'app.helpView()'},
+		{item: "Sair",			class:"exit",		click:'app.exit()'}
    		],
 
 "en" : [
 		{item: "Home",			class:"home",		click:'app.homeView()'},
 		{item: "About",			class:"about",      click:'app.aboutView()'},
-		{item: "Help",			class:"help",       click:'app.helpView()'}
+		{item: "Help",			class:"help",       click:'app.helpView()'},
+		{item: "Sair",			class:"exit",		click:'app.exit()'}
  		]
 };
 

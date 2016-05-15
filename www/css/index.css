@@ -253,6 +253,16 @@ h1 {
 	padding-top: 6px;
 }
 
+
+.exit {
+
+  background: url(../img/exit.png) left center no-repeat;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 6px;
+}
 /***************************Start Emogis Class **********************************/
 
 .emogi {
