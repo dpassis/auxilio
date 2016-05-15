@@ -120,7 +120,6 @@ var app = {
 
     socialShare: function(imageName){
 
-        alert(imageName);
 
       navigator.screenshot.save(function(error,res){
           if(error){
@@ -131,7 +130,7 @@ var app = {
         },'jpg',50,imageName);
 
 
-      window.plugins.socialsharing.share('Optional message', 'Optional title', 'file:///storage/emulated/0/Pictures/'+imageName+'.jpg');
+      window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/'+imageName+'.jpg');
 
     },
 
