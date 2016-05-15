@@ -128,11 +128,13 @@ var app = {
             console.error(error);
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
+            window.plugins.socialsharing.share('Optional message', 'Optional title', res.filePath+imageDesc+'.jpg');
           }
         },'jpg',50,imageDesc);
 
+      alert()
 
-      window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/'+imageDesc+'.jpg');
+      
 
     },
 
