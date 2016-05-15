@@ -70,7 +70,8 @@ var app = {
 
     },
     onBackKeyDown: function() {
-        app.homeView();
+        alert('onBackKeyDown');
+        app.helpView();
     },
 
     //Exibe um alert (Nativo de acordo com o SO)
