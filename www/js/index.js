@@ -69,6 +69,9 @@ var app = {
         app.receivedEvent('deviceready');
 
     },
+    onBackKeyDown: function() {
+        app.homeView();
+    },
 
     //Exibe um alert (Nativo de acordo com o SO)
     showAlert: function (message, title) {
