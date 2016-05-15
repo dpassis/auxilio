@@ -88,13 +88,15 @@ var help = {
 var util = {
 
 	"pt" : {
-			share: { content: "Compartilhar"}
+			share: { content: "Compartilhar"},
+			shareThisApp: { content: "Compartilhar o aplicativo"}
 		
 						
 			},
 
 	"en" : {
-			share: { content: "Share"}
+			share: { content: "Share"},
+			shareThisApp: { content: "Share this App"}
 
 				
 			}

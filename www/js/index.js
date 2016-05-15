@@ -117,31 +117,10 @@ var app = {
 		
 	},
 
-    socialShare: function(){
 
+    socialShare: function(imageName){
 
-    },
-
-    fbShare : function(){
-       
-    window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
-                                                 null /* img */, 
-                                                 null /* url */, 
-                                                 null, 
-                                                 function(errormsg){alert("Error: Cannot Share")}
-                                                 );
-    },
-
-    twitterShare : function(){
-    window.plugins.socialsharing.shareViaTwitter('Message via Twitter',
-                                                 null /* img */, 
-                                                 'http://twitter.com/', 
-                                                 null, 
-                                                 function(errormsg){alert("Error: Cannot Share")}
-                                                 );
-    },
-
-    screenShot: function(){
+        alert(imageName);
 
       navigator.screenshot.save(function(error,res){
           if(error){
@@ -149,12 +128,16 @@ var app = {
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
           }
-        },'jpg',50,'myScreenShot');
+        },'jpg',50,imageName);
 
-        $("#information").append("<b>Salvando imagem...</b>");
 
-      window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/myScreenShot.jpg');
+      window.plugins.socialsharing.share('Optional message', 'Optional title', 'file:///storage/emulated/0/Pictures/'+imageName+'.jpg');
 
+    },
+
+    shareApp: function(){
+
+        window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/'+imageName+'.jpg');
     },
 
     /**Show or Hide Div by id **/
