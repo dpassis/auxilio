@@ -143,13 +143,17 @@ var app = {
 
     screenShot: function(){
 
-       navigator.screenshot.save(function(error,res){
+      navigator.screenshot.save(function(error,res){
           if(error){
             console.error(error);
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
           }
         },'jpg',50,'myScreenShot');
+
+        $("#information").append("<b>Salvando imagem...</b>");
+
+      window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/myScreenShot.jpg');
 
     },
 

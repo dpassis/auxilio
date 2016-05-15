@@ -170,7 +170,8 @@ var TextView = function(itemId, classId){
 							                "<h2>"+texto[itemId].vers+"</h2>"+
 							                "<p style ='text-align:justify; padding-left: 20px; padding-right: 20px;'>"+texto[itemId].itemText+"</p>"+
 							                // "<a href='#' onclick='window.plugins.socialsharing.share(\""+texto[itemId].itemText+"\")'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
-							                 "<a href='#' onclick='app.screenShot()'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
+							                "<a href='#' onclick='app.screenShot()'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
+							                "<div id='information'></div>"+
 							            "</div>"
 							        	}
 
