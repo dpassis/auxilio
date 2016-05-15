@@ -132,14 +132,12 @@ var app = {
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
             imagePath = res.filePath;
             alert(imagePath);
+             window.plugins.socialsharing.share('Optional message', 'Optional title','file://'+imagePath);
             
           }
         },'jpg',50,imageDesc);
 
-      imagePathFinal = imagePath+imageDesc;
-
-      alert(imagePathFinal);
-      window.plugins.socialsharing.share('Optional message', 'Optional title', path+imageDesc+'.jpg');
+  
 
     },
 
