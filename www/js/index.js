@@ -120,6 +120,8 @@ var app = {
 
     socialShare: function(imageName){
 
+    var imageDesc = '';
+    imageDesc = imageName;
 
       navigator.screenshot.save(function(error,res){
           if(error){
@@ -127,16 +129,16 @@ var app = {
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
           }
-        },'jpg',50,imageName);
+        },'jpg',50,imageDesc);
 
 
-      window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/'+imageName+'.jpg');
+      window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/'+imageDesc+'.jpg');
 
     },
 
     shareApp: function(){
 
-        window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/'+imageName+'.jpg');
+        window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/screenshot.jpg');
     },
 
     /**Show or Hide Div by id **/
