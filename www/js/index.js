@@ -128,7 +128,7 @@ var app = {
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
             imagePath = res.filePath;
-            window.plugins.socialsharing.share(appName, whenHelp,'file://'+imagePath);
+            window.plugins.socialsharing.share(appName+":"+whenHelp,null,'file://'+imagePath);
             
           }
         },'jpg',50,imageName);
