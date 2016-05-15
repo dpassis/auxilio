@@ -118,12 +118,9 @@ var app = {
 	},
 
 
-    socialShare: function(imageName){
-
-    var imageDesc = '';
+    socialShare: function(imageName,appName,whenHelp){
+    
     var imagePath = '';
-    var imagePathFinal = '';
-    imageDesc = imageName;
 
       navigator.screenshot.save(function(error,res){
           if(error){
@@ -131,11 +128,10 @@ var app = {
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
             imagePath = res.filePath;
-            alert(imagePath);
-             window.plugins.socialsharing.share('Optional message', 'Optional title','file://'+imagePath);
+            window.plugins.socialsharing.share(appName, whenHelp,'file://'+imagePath);
             
           }
-        },'jpg',50,imageDesc);
+        },'jpg',50,imageName);
 
   
 
