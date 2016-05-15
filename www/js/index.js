@@ -132,10 +132,6 @@ var app = {
           }
         },'jpg',50,imageDesc);
 
-      alert()
-
-      
-
     },
 
     shareApp: function(){
