@@ -141,6 +141,18 @@ var app = {
                                                  );
     },
 
+    screenShot: function(){
+
+       navigator.screenshot.save(function(error,res){
+          if(error){
+            console.error(error);
+          }else{
+            console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
+          }
+        },'jpg',50,'myScreenShot');
+
+    },
+
     /**Show or Hide Div by id **/
     showHideDiv : function(id){
 
