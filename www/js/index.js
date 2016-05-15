@@ -131,6 +131,7 @@ var app = {
           }else{
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
             imagePath = res.filePath;
+            alert(imagePath);
             
           }
         },'jpg',50,imageDesc);
