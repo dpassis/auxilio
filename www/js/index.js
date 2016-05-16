@@ -76,7 +76,6 @@ var app = {
     },
 
     onBackKeyDown: function() {
-        alert('onBackKeyDown');
         app.HomeView();
     },
 

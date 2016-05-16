@@ -167,10 +167,10 @@ var TextView = function(itemId, classId){
    			var contextHeader  = {title: '', img: '' };
    			var contextContent = {body:"<div style ='text-align:center'>"+
    											"<br/>"+
-							                "<h1><span class='"+texto[itemId].class+"'></span>"+texto[itemId].item+"</h1>"+
+							                "<h1 id='"+texto[itemId].class+"'><span class='"+texto[itemId].class+"'></span>"+texto[itemId].item+"</h1>"+
 							                "<h2>"+texto[itemId].vers+"</h2>"+
 							                "<p style ='text-align:justify; padding-left: 20px; padding-right: 20px;'>"+texto[itemId].itemText+"</p>"+
-							                "<a href='#' onclick='app.socialShare(\""+texto[itemId].class+"\",\""+startPage[language_root].appName_1.content+"\",\""+texto[itemId].item+"\")'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
+							                "<a href='#"+texto[itemId].class+"' onclick='app.socialShare(\""+texto[itemId].class+"\",\""+startPage[language_root].appName_1.content+"\",\""+texto[itemId].item+"\")'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
 							            "</div>"
 							        	}
 
