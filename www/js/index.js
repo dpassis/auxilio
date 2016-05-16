@@ -131,6 +131,8 @@ var app = {
     
     var imagePath = '';
 
+    location.href = "#"+imageName;
+
       navigator.screenshot.save(function(error,res){
           if(error){
             console.error(error);
