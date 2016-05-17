@@ -133,16 +133,27 @@ var app = {
 
     location.href = "#"+imageName;
 
-      navigator.screenshot.save(function(error,res){
+   setTimeout(function(){
+
+        navigator.screenshot.save(function(error,res){
           if(error){
             console.error(error);
           }else{
+
             console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
             imagePath = res.filePath;
             window.plugins.socialsharing.share(appName+":"+whenHelp,null,'file://'+imagePath);
             
           }
         },'jpg',50,imageName);
+        
+        console.log("print and share screen");
+    }, 5000);
+
+   console.log("redirect page to top");
+
+
+      
 
   
 
