@@ -76,7 +76,7 @@ var app = {
     },
 
     onBackKeyDown: function() {
-        app.HomeView();
+        this.HomeView();
     },
 
     //Exibe um alert (Nativo de acordo com o SO)
@@ -148,7 +148,7 @@ var app = {
         },'jpg',50,imageName);
         
         console.log("print and share screen");
-    }, 5000);
+    }, 1000);
 
    console.log("redirect page to top");
 
