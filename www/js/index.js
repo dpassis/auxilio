@@ -63,7 +63,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        
+        document.addEventListener("backbutton", this.onBackKeyDown, false); 
        
     },
     // deviceready Event Handler
@@ -72,11 +72,11 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        document.addEventListener("backbutton", this.onBackKeyDown, false); 
+        
     },
 
     onBackKeyDown: function() {
-        showAlert('Back button is ok','backbutton');
+        this.showAlert('Back button is ok','backbutton');
         this.HomeView();
     },
 
