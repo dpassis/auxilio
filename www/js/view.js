@@ -146,8 +146,7 @@ var HelpView = function(){
 var TextView = function(itemId, classId){
 	
 
-	 this.header  = "<div/>";
-    //this.listHelp = "<div/>";
+	this.header  = "<div/>";
 	this.content = "<div/>";
 
 	this.initialize = function(){
@@ -176,6 +175,8 @@ var TextView = function(itemId, classId){
 
    			 $('#header').html(this.header(contextHeader));
    			 $('#content').html(this.content(contextContent));
+
+   			 
 
 	};
 	
@@ -221,7 +222,7 @@ var AuxilioView = function(){
 							                 "<h1>"+startPage[language_root].appName.content+"</h1>"+
 							                "<div id='deviceready' class='blink'>"+
 							                    "<p class='event listening'>"+startPage[language_root].starting.content+"</p>"+
-							                    "<p class='event received'><a href='#' onclick='app.homeView()'><span>"+startPage[language_root].startApp.content+"</span></a></p>"+
+							                    "<p class='event received'><a href='#' onclick='app.homeViewNoToggle()'><span>"+startPage[language_root].startApp.content+"</span></a></p>"+
 							               "</div>"+
 							            "</div>"};
 

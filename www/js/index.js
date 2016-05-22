@@ -30,6 +30,7 @@ var app = {
 
     },
 
+    //exit app
     exit: function(){
         navigator.app.exitApp();
     },
@@ -39,6 +40,12 @@ var app = {
        this.toggleSideBar();
 	   new HomeView().run();
 	},
+
+    /** Call to Render Home Page **/
+    homeViewNoToggle: function() {
+     
+       new HomeView().run();
+    },
 	
     /** Call to Render About Page **/
 	aboutView: function() {
@@ -55,7 +62,12 @@ var app = {
     /** Call to Render Text Page **/
     textView: function(itemId) {
 
+        // redirect scroll to the top **/
+        var myDiv = document.getElementById('content');
+        myDiv.scrollTop = 0;
+
         new TextView(itemId).run();
+        
     },
 	
     // Bind Event Listeners
@@ -65,8 +77,10 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         document.addEventListener("backbutton", this.onBackKeyDown, false); 
+        document.addEventListener("menubutton", this.onMenuButton, false); 
        
     },
+
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
@@ -76,9 +90,16 @@ var app = {
         
     },
 
+    // on push back key load the home view page without load menu **/
     onBackKeyDown: function() {
        console.log('onBackKeyDown is pushed');
-       app.homeView();
+       app.homeViewNoToggle();
+    },
+
+    // on push menu button show the app menu 
+    onMenuButton: function(){
+         console.log('onMenuButton is pushed');
+        app.toggleSideBar();
     },
 
     //Exibe um alert (Nativo de acordo com o SO)
@@ -103,6 +124,7 @@ var app = {
         console.log('Received Event: ' + id);
     },
 
+    // show or hide app Menu
     toggleSideBar: function(){
 		
             var sidebar = document.getElementById("sidebar");
@@ -118,46 +140,32 @@ var app = {
             }
     },
 	
-	focusPlaceHolder : function(id){
-		 id.value = '';
-	},
-	
-	blurPlaceHolder : function(id, val){
-		
-		if (id.value == '') {id.value = val;}
-		
-	},
 
-
+    /** Print and Share screen **/
     socialShare: function(imageName,appName,whenHelp){
     
-    var imagePath = '';
+        var imagePath = '';
 
-    location.href = "#"+imageName;
+        location.href = "#"+imageName;
 
-   setTimeout(function(){
+           setTimeout(function(){
 
-        navigator.screenshot.save(function(error,res){
-          if(error){
-            console.error(error);
-          }else{
+                navigator.screenshot.save(function(error,res){
+                  if(error){
+                    console.error(error);
+                  }else{
 
-            console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
-            imagePath = res.filePath;
-            window.plugins.socialsharing.share(appName+":"+whenHelp,null,'file://'+imagePath);
-            
-          }
-        },'jpg',50,imageName);
-        
-        console.log("print and share screen");
-    }, 1000);
+                    console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
+                    imagePath = res.filePath;
+                    window.plugins.socialsharing.share(appName+":"+whenHelp,null,'file://'+imagePath);
+                    
+                  }
+                },'jpg',50,imageName);
+                
+                console.log("print and share screen");
+            }, 1000);
 
-   console.log("redirect page to top");
-
-
-      
-
-  
+       console.log("redirect page to top");
 
     },
 
@@ -165,6 +173,7 @@ var app = {
 
         window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/screenshot.jpg');
     },
+
 
     /**Show or Hide Div by id **/
     showHideDiv : function(id){
