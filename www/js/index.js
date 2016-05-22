@@ -76,6 +76,7 @@ var app = {
     },
 
     onBackKeyDown: function() {
+        showAlert('Back button is ok','backbutton');
         this.HomeView();
     },
 
