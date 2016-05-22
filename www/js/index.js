@@ -38,6 +38,11 @@ var app = {
 	/** Call to Render Home Page **/
 	homeView: function() {
        this.toggleSideBar();
+
+        // redirect scroll to the top **/
+        var myDiv = document.getElementById('content');
+        myDiv.scrollTop = 0;
+        
 	   new HomeView().run();
 	},
 
@@ -98,7 +103,7 @@ var app = {
 
     // on push menu button show the app menu 
     onMenuButton: function(){
-         console.log('onMenuButton is pushed');
+        console.log('onMenuButton is pushed');
         app.toggleSideBar();
     },
 
