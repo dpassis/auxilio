@@ -24,6 +24,7 @@ var app = {
        
         this.bindEvents();
 		new AuxilioView().run();
+
         //initialize sidebar style left to run or first click
         document.getElementById("sidebar").style.left = "-200px";
 
@@ -77,7 +78,7 @@ var app = {
 
     onBackKeyDown: function() {
        console.log('onBackKeyDown is pushed');
-        this.HomeView();
+       app.homeView();
     },
 
     //Exibe um alert (Nativo de acordo com o SO)
