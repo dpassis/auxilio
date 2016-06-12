@@ -78,7 +78,7 @@ var AboutView = function(){
 							                "<h1>"+header[language_root].about.desc+"</h1>"+
 							                "<div>"+
 							                    "<p>"+about[language_root].content+"</p>"+
-							                    "<a href='#' onclick='app.shareApp()'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].shareThisApp.content+"</span></a>"+
+							                    "<a class='share' href='#' onclick='app.shareApp()'><span>"+util[language_root].shareThisApp.content+"</span></a>"+
 							               "</div>"+
 							            "</div>"};
 
@@ -169,7 +169,7 @@ var TextView = function(itemId, classId){
 							                "<h1 id='"+texto[itemId].class+"'><span class='"+texto[itemId].class+"'></span>"+texto[itemId].item+"</h1>"+
 							                "<h2>"+texto[itemId].vers+"</h2>"+
 							                "<p style ='text-align:justify; padding-left: 20px; padding-right: 20px;'>"+texto[itemId].itemText+"</p>"+
-							                "<a href='#"+texto[itemId].class+"' onclick='app.socialShare(\""+texto[itemId].class+"\",\""+startPage[language_root].appName_1.content+"\",\""+texto[itemId].item+"\")'><i class='fa fa-share-alt' style='font-size:24px'></i><span>"+util[language_root].share.content+"</span></a>"+
+							                "<a class='share' href='#"+texto[itemId].class+"' onclick='app.socialShare(\""+texto[itemId].class+"\",\""+startPage[language_root].appName_1.content+"\",\""+texto[itemId].item+"\")'><span>"+util[language_root].share.content+"</span></a>"+
 							            "</div>"
 							        	}
 

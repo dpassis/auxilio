@@ -100,11 +100,14 @@ h1 {
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
+    height: 25px;
+    padding-top: 15px;
 }
 
 .event.listening {
     background-color:#333333;
     display:block;
+
 }
 
 .event.received {
@@ -263,6 +266,18 @@ h1 {
   padding-left: 30px;
   padding-top: 6px;
 }
+
+.share {
+
+  background: url(../img/share.png) left center no-repeat;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 6px;
+}
+
+
 /***************************Start Emogis Class **********************************/
 
 .emogi {
