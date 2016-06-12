@@ -7,7 +7,7 @@
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="5000" />
+  <preference name="SplashScreenDelay" value="15000" />
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="false"/>
   <preference name="webviewbounce" value="true"/>
