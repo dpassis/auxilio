@@ -222,7 +222,7 @@ var AuxilioView = function(){
 							                 "<h1>"+startPage[language_root].appName.content+"</h1>"+
 							                "<div id='deviceready' class='blink'>"+
 							                    "<p class='event listening'>"+startPage[language_root].starting.content+"</p>"+
-							                    "<p class='event received'><a href='#' onclick='app.homeViewNoToggle()'><span>"+startPage[language_root].startApp.content+"</span></a></p>"+
+							                    "<p class='event received'><a style='color: black;' href='#' onclick='app.homeViewNoToggle()'><span>"+startPage[language_root].startApp.content+"</span></a></p>"+
 							               "</div>"+
 							            "</div>"};
 
