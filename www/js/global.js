@@ -40,7 +40,7 @@ var startPage = {
 "pt" : {
 		appName:    { content: "Onde Encontrar Auxílio"},
 		appName_1:  { content: "Onde Encontrar Auxílio quando"},
-		startApp:   { content: "Clique para encontrar auxílio"},
+		startApp:   { content: "Toque para encontrar auxílio"},
 		starting:   { content: "Iniciando..."}
 					
 		},
@@ -48,7 +48,7 @@ var startPage = {
 "en" : {
 		appName:    { content: "Where to Find Help"},
 		appName_1:  { content: "Where to Find Help When"},
-		startApp:   { content: "Click to find help"},
+		startApp:   { content: "Touch to find help"},
 		starting:   { content: "Starting..."}
 			
 		}
