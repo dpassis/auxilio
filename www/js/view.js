@@ -6,7 +6,7 @@ var language_default = language[0];
 
 //Verify if language is PT or EN, if not set the default language as EN
 if(language_default != "en" && language_default != "pt"){
-	language_default = "en";
+	language_default = "pt";
 }
 
 
