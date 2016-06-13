@@ -174,9 +174,9 @@ var app = {
 
     },
 
-    shareApp: function(){
+    shareApp: function(message){
 
-        window.plugins.socialsharing.share('Message and link', null, null, 'https://play.google.com/store/apps/details?id=br.com.auxilio');
+        window.plugins.socialsharing.share(message, null, null, 'https://play.google.com/store/apps/details?id=br.com.auxilio');
     },
 
 
