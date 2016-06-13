@@ -92,7 +92,7 @@ var util = {
 	"pt" : {
 			share: { content: "Compartilhar"},
 			shareThisApp: { content: "Compartilhar o aplicativo"},
-			downloadThisApp: { content: "Baixe o aplicativo [Auxílio] e encontre referências bíblicas para diferentes situações da vida"}
+			downloadThisApp: { content: "Baixe o aplicativo [Auxílio] e encontre referências bíblicas para diferentes situações da vida: "}
 		
 						
 			},
@@ -100,7 +100,7 @@ var util = {
 	"en" : {
 			share: { content: "Share"},
 			shareThisApp: { content: "Share this App"},
-			downloadThisApp: { content: "Make the download the [Find Help app] and find help to differents life situations"}
+			downloadThisApp: { content: "Make the download the [Find Help app] and find help to differents life situations: "}
 
 				
 			}
