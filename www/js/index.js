@@ -176,7 +176,7 @@ var app = {
 
     shareApp: function(){
 
-        window.plugins.socialsharing.share(null, null, 'file:///storage/emulated/0/Pictures/screenshot.jpg');
+        window.plugins.socialsharing.share('Message and link', null, null, 'https://play.google.com/store/apps/details?id=br.com.auxilio');
     },
 
 

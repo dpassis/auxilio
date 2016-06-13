@@ -78,7 +78,7 @@ var AboutView = function(){
 							                "<h1>"+header[language_root].about.desc+"</h1>"+
 							                "<div>"+
 							                    "<p>"+about[language_root].content+"</p>"+
-							                    "<a class='share' href='#' onclick='app.shareApp()'><span>"+util[language_root].shareThisApp.content+"</span></a>"+
+							                    "<a class='share' href='#' onclick='app.shareApp("+util[language_root].downloadThisApp.content+")'><span>"+util[language_root].shareThisApp.content+"</span></a>"+
 							               "</div>"+
 							            "</div>"};
 
