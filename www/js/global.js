@@ -62,9 +62,9 @@ var about = {
 			aboutTitle : "Sobre o aplicativo",
 			aboutImportant: "Importante",
 			aboutSubTitle: "Um aplicativo para encontrar referências bíblicas em diferentes situações da vida.",
-			aboutContent: "As citações e textos encontrados nesse aplicativo foram baseados no Livro (O Novo Testamento de Nosso Senhor e Salvador Jesus Cristo – Os Gideões Internacionais). </br>"+
-							"Esse aplicativo não é direcionado a uma religião específica e respeita a diversidade de religiões e crenças ao redor do mundo. </br>"+
-							"As informações disponibilizadas nesse aplicativo são de domínio público e, portanto podem ser obtidas em outros formatos.</br> "+
+			aboutContent: "As citações e textos encontrados nesse aplicativo foram baseados no Livro (O Novo Testamento de Nosso Senhor e Salvador Jesus Cristo – Os Gideões Internacionais).</br> </br>"+
+							"Esse aplicativo não é direcionado a uma religião específica e respeita a diversidade de religiões e crenças ao redor do mundo.</br> </br>"+
+							"As informações disponibilizadas nesse aplicativo são de domínio público e, portanto podem ser obtidas em outros formatos.</br></br> "+
 							"Esse aplicativo não possui fins lucrativos, não deve ser comercializado ou receber veiculação de qualquer tipo de propaganda seja ela lucrativa ou não.  Caso seja solicitado qualquer tipo de cobrança ou veiculado qualquer tipo de propaganda relacionado ao aplicativo, por favor, denuncie ao desenvolvedor.",
 			exampleTitle: "Por exemplo: ",
 			exampleContent: "Caso você se sinta “Cansado”, “Triste”, “Em Dúvida” o aplicativo fornecerá referências bíblicas que irão te auxiliar durante esses momentos."
@@ -72,12 +72,12 @@ var about = {
 			},
 
 	"en" : {
-			aboutTile : "About this app",
+			aboutTitle : "About this app",
 			aboutImportant: "Important",
 			aboutSubTitle: "An app to find biblical references in different life situations.",
-			aboutContent: "Citations and texts found in this app were based on the book (The New Testament of our Lord and Savior Jesus Christ - The International  Gideons)."+
-							"This app is not directed to a specific religion and regards the diversity of religions and beliefs around the world."+
-							"The information provided in this app are public domain and therefore can be obtained in other formats."+
+			aboutContent: "Citations and texts found in this app were based on the book (The New Testament of our Lord and Savior Jesus Christ - The International  Gideons).</br></br>"+
+							"This app is not directed to a specific religion and regards the diversity of religions and beliefs around the world.</br></br>"+
+							"The information provided in this app are public domain and therefore can be obtained in other formats.</br></br>"+
 							"This application is non-profit, should not be marketed or receive transmission of any kind of advertising whether profitable or not. If requested any collection or served any kind of advertising related to the application, please report it to the developer.",
 			exampleTitle: "For Example: ",
 			exampleContent: "If you feel “Tired”, “Sad”, “In Doubt” the app will provide biblical references that will help you during these moments."
@@ -90,12 +90,24 @@ var about = {
 var help = {
 
 	"pt" : {
-			content: "No menu selecione Início, selecione uma das opções para encontrar auxílio, serão exibidas as referências bíblicas disponíveis, selecione uma das opções e o texto será exibido."
+		 	helpTitle: "Como usar o aplicativo",
+		 	findReference: "Encontrando uma referência",
+			content: "No menu [≡] (topo-esquerda) selecione Início, selecione uma das opções para encontrar auxílio, serão exibidas as referências bíblicas disponíveis, selecione uma das opções e o texto será exibido.",
+			shareTitle: "Compartilhando uma referência",
+			shareContent: "Após realizar os passos para visualizar o texto de uma das referências é possível compartilhar a referência tocando na opção \"Compartilhar\" logo abaixo do texto",
+			exitTitle: "Sair do Aplicativo",
+			exitContent: "Para fechar o aplicativo toque no ícone do menu [≡](topo-esquerda) e em seguida toque em \"Sair\" o aplicativo será encerrado."
 		
 			},
 
 	"en" : {
-			content: "In the menu select Home, select one of the options to find help, biblical references available are displayed, select one of the options and the text will be displayed."
+			helpTitle: "How to use this app",
+			findReference: "Finding a reference",
+			content: "In the menu [≡] (top-left) select Home, select one of the options to find help, biblical references available are displayed, select one of the options and the text will be displayed.",
+			shareTitle: "Sharing a refference",
+			shareContent: "After performing the steps to view the text of the references, you can share the selected reference by touching the option \"Share\" just below the text.",
+			exitTitle: "App Exit",
+			exitContent: "To close the app touch the menu icon [≡](top left) and then tap \"Exit\", the application is closed."
 				
 			}
 	

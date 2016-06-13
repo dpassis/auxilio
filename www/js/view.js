@@ -74,7 +74,7 @@ var AboutView = function(){
 	this.render = function(){
 	
    			var contextHeader  = {title: header[language_root].about.desc, img: header[language_root].about.img };
-   			var contextContent = {body:"<div style ='text-align:center'>"+
+   			var contextContent = {body:"<div style ='text-align:center; margin-top: 15px;'>"+
 							                "<h1>"+about[language_root].aboutTitle+"</h1>"+
 							                "<p style ='text-align:center; padding-left: 10px; padding-right: 10px; font-style: italic;font-weight: bold;'>"+about[language_root].aboutSubTitle+"</p>"+
 							                "<p style ='text-align:left; padding-left: 40px; padding-right: 10px; font-weight: bold;'>"+about[language_root].exampleTitle+"</p>"+
@@ -121,10 +121,17 @@ var HelpView = function(){
 	this.render = function(){
 
    			var contextHeader  = {title: header[language_root].help.desc, img: header[language_root].help.img };
-   			var contextContent = {body:"<div class='app' id='pagehome'>"+
-							               "<h1>"+header[language_root].help.desc+"</h1>"+
+   			var contextContent = {body:"<div style ='text-align:center; margin-top: 15px;'>"+
+							               "<h1>"+help[language_root].helpTitle+"</h1>"+
+							               "<p style ='text-align:center; padding-left: 10px; padding-right: 10px; font-style: italic;font-weight: bold;'>"+help[language_root].findReference+"</p>"+
+							               "<p style = 'padding-left: 20px;padding-right: 20px; text-align: justify'>"+help[language_root].content+"</p>"+
+							               "<p style ='text-align:center; padding-left: 10px; padding-right: 10px; font-style: italic;font-weight: bold;'>"+help[language_root].shareTitle+"</p>"+
+							               "<p style = 'padding-left: 20px;padding-right: 20px; text-align: justify'>"+help[language_root].shareContent+"</p>"+
+							               "<p style ='text-align:center; padding-left: 10px; padding-right: 10px; font-style: italic;font-weight: bold;'>"+help[language_root].exitTitle+"</p>"+
+							               "<p style = 'padding-left: 20px;padding-right: 20px; text-align: justify'>"+help[language_root].exitContent+"</p>"+
 							                "<div>"+
-							                    "<p style ='text-align:justify;'>"+help[language_root].content+"</p>"+
+							                	"</br>"+
+							                    "<a class='share' href='#' onclick='app.shareApp(\""+util[language_root].downloadThisApp.content+"\")'><span>"+util[language_root].shareThisApp.content+"</span></a>"+
 							               "</div>"+
 							            "</div>"};
 
