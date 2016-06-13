@@ -74,10 +74,14 @@ var AboutView = function(){
 	this.render = function(){
 	
    			var contextHeader  = {title: header[language_root].about.desc, img: header[language_root].about.img };
-   			var contextContent = {body:"<div class='app' id='pagehome'>"+
-							                "<h1>"+header[language_root].about.desc+"</h1>"+
+   			var contextContent = {body:"<div style ='text-align:center'>"+
+							                "<h1>"+about[language_root].aboutTitle+"</h1>"+
+							                "<p style ='text-align:center; padding-left: 10px; padding-right: 10px; font-style: italic;font-weight: bold;'>"+about[language_root].aboutSubTitle+"</p>"+
+							                "<p style ='text-align:left; padding-left: 40px; padding-right: 10px; font-weight: bold;'>"+about[language_root].exampleTitle+"</p>"+
+							                "<p style = 'padding-left: 20px;padding-right: 20px; text-align: justify'>"+about[language_root].exampleContent+"</p>"+
+							                "<p style ='text-align:center; padding-left: 10px; padding-right: 10px; font-style: italic;font-weight: bold; text-decoration: underline;'>"+about[language_root].aboutImportant+"</p>"+
+							                "<p style = 'padding-left: 20px;padding-right: 20px; text-align: justify'>"+about[language_root].aboutContent+"</p>"+
 							                "<div>"+
-							                    "<p>"+about[language_root].content+"</p>"+
 							                    "<a class='share' href='#' onclick='app.shareApp(\""+util[language_root].downloadThisApp.content+"\")'><span>"+util[language_root].shareThisApp.content+"</span></a>"+
 							               "</div>"+
 							            "</div>"};

@@ -59,12 +59,28 @@ var startPage = {
 var about = {
 
 	"pt" : {
-			content: "Um aplicativo para encontrar referências bíblicas em diferentes situaçções"
+			aboutTitle : "Sobre o aplicativo",
+			aboutImportant: "Importante",
+			aboutSubTitle: "Um aplicativo para encontrar referências bíblicas em diferentes situações da vida.",
+			aboutContent: "As citações e textos encontrados nesse aplicativo foram baseados no Livro (O Novo Testamento de Nosso Senhor e Salvador Jesus Cristo – Os Gideões Internacionais). </br>"+
+							"Esse aplicativo não é direcionado a uma religião específica e respeita a diversidade de religiões e crenças ao redor do mundo. </br>"+
+							"As informações disponibilizadas nesse aplicativo são de domínio público e, portanto podem ser obtidas em outros formatos.</br> "+
+							"Esse aplicativo não possui fins lucrativos, não deve ser comercializado ou receber veiculação de qualquer tipo de propaganda seja ela lucrativa ou não.  Caso seja solicitado qualquer tipo de cobrança ou veiculado qualquer tipo de propaganda relacionado ao aplicativo, por favor, denuncie ao desenvolvedor.",
+			exampleTitle: "Por exemplo: ",
+			exampleContent: "Caso você se sinta “Cansado”, “Triste”, “Em Dúvida” o aplicativo fornecerá referências bíblicas que irão te auxiliar durante esses momentos."
 		
 			},
 
 	"en" : {
-			content: "An application to find bible references in diferentes life situations."
+			aboutTile : "About this app",
+			aboutImportant: "Important",
+			aboutSubTitle: "An app to find biblical references in different life situations.",
+			aboutContent: "Citations and texts found in this app were based on the book (The New Testament of our Lord and Savior Jesus Christ - The International  Gideons)."+
+							"This app is not directed to a specific religion and regards the diversity of religions and beliefs around the world."+
+							"The information provided in this app are public domain and therefore can be obtained in other formats."+
+							"This application is non-profit, should not be marketed or receive transmission of any kind of advertising whether profitable or not. If requested any collection or served any kind of advertising related to the application, please report it to the developer.",
+			exampleTitle: "For Example: ",
+			exampleContent: "If you feel “Tired”, “Sad”, “In Doubt” the app will provide biblical references that will help you during these moments."
 				
 			}
 	
