@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.darktalker.cordova.screenshot": {
+            "PACKAGE_NAME": "br.com.auxilio"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "br.com.auxilio"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
+            "id": "com.darktalker.cordova.screenshot.screenshot",
+            "pluginId": "com.darktalker.cordova.screenshot",
+            "merges": [
+                "navigator.screenshot"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.darktalker.cordova.screenshot": "0.1.5",
+        "cordova-plugin-whitelist": "1.2.2"
+    }
+}

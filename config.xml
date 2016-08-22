@@ -21,6 +21,7 @@
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
   <preference name="CrosswalkAnimatable" value="true" />
+  <preference name="EnableViewportScale" value="true" />
   <gap:plugin name="org.apache.cordova.file"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.0.8" />
