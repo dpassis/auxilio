@@ -22,7 +22,7 @@
   <preference name="android-installLocation" value="auto"/>
   <preference name="CrosswalkAnimatable" value="true" />
   <preference name="EnableViewportScale" value="true" />
-  <gap:plugin name="org.apache.cordova.file"/>
+  <gap:plugin name="org.apache.cordova.file" source="npm" />
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.0.8" />
   <plugin name="com.darktalker.cordova.screenshot" spec="0.1.5" source="npm" />
