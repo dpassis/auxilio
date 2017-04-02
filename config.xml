@@ -3,7 +3,7 @@
   <description>Um aplicativo para encontrar referencias biblicas em diferentes situacoes da vida</description>
   <author href="http://dpassis.com.br" email="daniel@dpassis.com.br">Daniel Paulo de Assis</author>
   <content src="index.html"/>
-  <preference name="phonegap-version" value="cli-6.4.0" />
+  <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
   <preference name="SplashScreen" value="screen"/>
