@@ -37,7 +37,7 @@
   <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
   <gap:splash src="splash.png" />
   <access origin="*"/>
-  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <gap:plugin name="cordova-plugin-whitelist" source="npm" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
